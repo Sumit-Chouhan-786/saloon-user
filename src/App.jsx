@@ -5,6 +5,7 @@ import Login from "./Login";
 import Home from "./Home";
 import Appointments from "./Appointments";
 import History from "./History";
+import EditAppointments from "./EditAppointments";
 
 function App() {
     return (
@@ -15,6 +16,10 @@ function App() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/appointments" element={<Appointments />} />
                 <Route path="/history" element={<History />} />
+                <Route
+                    path="/edit-appointment"
+                    element={<EditAppointments />}
+                />
             </Routes>
         </>
     );

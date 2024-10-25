@@ -55,6 +55,7 @@ function Appointments() {
                 email: localStorage.getItem("email"),
                 staffId,
                 date,
+                duration,
                 startTime,
                 endTime,
                 description,
@@ -133,6 +134,12 @@ function Appointments() {
                                 onChange={(e) => {
                                     const selectedService = allServices.find(
                                         (s) => s.name === service
+                                    );
+
+                                    setDuration(
+                                        selectedService
+                                            ? parseInt(selectedService.duration)
+                                            : ""
                                     );
                                     const durationInMinutes = selectedService
                                         ? parseInt(

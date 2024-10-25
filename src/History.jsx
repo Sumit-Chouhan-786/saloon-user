@@ -1,7 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function History() {
+    const navigator = useNavigate();
     const [appointments, setAppointments] = useState([]);
     const [oldAppointments, setOldAppointments] = useState([]);
     const [cancelledAppointments, setCancelledAppointments] = useState([]);
@@ -100,7 +102,19 @@ function History() {
                                             <td>{appointment.endTime}</td>
                                             <td>{appointment.staff}</td>
                                             <td>
-                                                <button className="btn btn-success">
+                                                <button
+                                                    className="btn btn-success"
+                                                    onClick={() => {
+                                                        navigator(
+                                                            "/edit-appointment",
+                                                            {
+                                                                state: {
+                                                                    appointment,
+                                                                },
+                                                            }
+                                                        );
+                                                    }}
+                                                >
                                                     Reschedule
                                                 </button>
                                                 <button
