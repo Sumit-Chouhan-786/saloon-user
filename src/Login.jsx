@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
@@ -9,10 +9,13 @@ function Login() {
     const [password, setPassword] = useState("");
 
     const handleClick = async () => {
-        const response = await axios.post("http://localhost:3000/user/login", {
-            email,
-            password,
-        });
+        const response = await axios.post(
+            "https://saloon-backend-ep2b.onrender.com/user/login",
+            {
+                email,
+                password,
+            }
+        );
 
         console.log("response", response);
 
@@ -28,7 +31,7 @@ function Login() {
 
     return (
         <>
-            <div className="flex justify-center items-center h-[100vh]">
+            <div className="flex justify-center items-center lg:py-16 py-8 mb-10">
                 <div className="w-[60vw] flex flex-col items-center justify-center gap-10">
                     <div>Login</div>
                     <div>

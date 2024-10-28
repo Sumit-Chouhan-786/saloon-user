@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 function Signup() {
@@ -13,12 +13,15 @@ function Signup() {
     const handleClick = async () => {
         console.log(name, email, password, phone);
 
-        const response = await axios.post("http://localhost:3000/user/signup", {
-            name,
+        const response = await axios.post(
+            "https://saloon-backend-ep2b.onrender.com/user/signup",
+            {
+                name,
             email,
             password,
-            phone,
-        });
+                phone,
+            }
+        );
 
         console.log("response", response);
 
@@ -31,7 +34,7 @@ function Signup() {
 
     return (
         <>
-            <div className="flex justify-center items-center h-[100vh]">
+            <div className="flex justify-center items-center lg:py-16 py-8 mb-10">
                 <div className="w-[60vw] flex flex-col items-center justify-center gap-10">
                     <div>SignUp</div>
                     <div>

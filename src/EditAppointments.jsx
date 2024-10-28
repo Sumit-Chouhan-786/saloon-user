@@ -25,7 +25,7 @@ function EditAppointments() {
         console.log("appointmentData", appointmentData);
 
         const res = await axios.put(
-            "http://localhost:3000/user/appointment/update",
+            "https://saloon-backend-ep2b.onrender.com/user/appointment/update",
             {
                 email: localStorage.getItem("email"),
                 appointmentId: appointmentData.appointmentId,
@@ -47,7 +47,7 @@ function EditAppointments() {
 
     return (
         <>
-            <div className="flex justify-center items-center h-[100vh]">
+            <div className="flex justify-center items-center lg:py-16 py-8 mb-10">
                 <div className="w-[60vw] flex flex-col items-center justify-center gap-10">
                     <div>Book appointments</div>
                     <div>
