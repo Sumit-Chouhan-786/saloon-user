@@ -16,7 +16,7 @@ const Hero = () => {
     <>
       <div
         className={`bg-hero flex flex-col bg-cover bg-center bg-no-repeat ${
-          pathname === HOME_PATH ? "min-h-screen" : ""
+          pathname === HOME_PATH ? "lg:min-h-screen min-h-[60vh]" : ""
         }`}
       >
         <Nav />

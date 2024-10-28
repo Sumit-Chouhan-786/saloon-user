@@ -31,15 +31,15 @@ function Login() {
 
     return (
         <>
-            <div className="flex justify-center items-center lg:py-16 py-8 mb-10">
+            <div className="flex justify-center items-center lg:py-16 py-8 mb-10 bg-black">
                 <div className="w-[60vw] flex flex-col items-center justify-center gap-10">
-                    <div>Login</div>
-                    <div>
+                    <div className="text-white text-[50px] tracking-[0.5px] !leading-[135%]">Login</div>
+                    <div className="w-full max-w-[400px] flex flex-col gap-4">
                         <label className="input input-bordered flex items-center gap-2">
                             Email
                             <input
                                 type="text"
-                                className="grow"
+                                className="grow outline-none"
                                 placeholder="a@a.com"
                                 onChange={(e) => setEmail(e.target.value)}
                             />
@@ -47,8 +47,9 @@ function Login() {
                         <label className="input input-bordered flex items-center gap-2">
                             Password
                             <input
+                            
                                 type="text"
-                                className="grow"
+                                className="grow outline-none"
                                 placeholder="********"
                                 onChange={(e) => setPassword(e.target.value)}
                             />
@@ -56,7 +57,7 @@ function Login() {
                     </div>
                     <div>
                         <button
-                            className="btn btn-success"
+                            className="btn transition-all duration-300 border-white text-white hover:text-yellow-400 hover:border-yellow-400"
                             onClick={handleClick}
                         >
                             Login

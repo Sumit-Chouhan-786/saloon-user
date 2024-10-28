@@ -2,7 +2,7 @@ import React from "react";
 import { REVIEWS } from "../../utilits/helper";
 const Reviews = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-[#202020]">
       <div className="lg:max-w-[1332px] container px-4 mx-auto py-[60px]">
         <p className="text-yellow font-medium text-xl leading-normal text-center">
           WHAT PEOPLE SAY ABOUT US
@@ -21,7 +21,7 @@ const Reviews = () => {
                   <img
                     src={review.img}
                     alt="review-img"
-                    className="size-20 sm:size-24 object-cover mx-auto"
+                    className="size-20 rounded-full sm:size-24 object-cover mx-auto"
                   />
                   <p className="text-base text-center font-normal !leading-normal mt-4 sm:mt-6 md:mt-8 lg:mt-[50px]">
                     Vestibulum commodo sapien non elit porttitor, vitae volutpat

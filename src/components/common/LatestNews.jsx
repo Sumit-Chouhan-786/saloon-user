@@ -1,4 +1,3 @@
-import React from "react";
 import { LatestNewsBlog } from "../../utilits/helper";
 const LatestNews = () => {
   return (
@@ -10,15 +9,18 @@ const LatestNews = () => {
         <p className="text-center text-white font-abril lg:text-[60px] text-[40px] font-normal mb-10">
           LATEST NEWS
         </p>
-        <div className=" flex flex-wrap gap-y-4 sm:max-w-full max-w-[330px] sm:mx-0 mx-auto">
+        <div className="flex flex-wrap gap-y-4  sm:max-w-full max-w-[330px] sm:mx-0 mx-auto">
           {LatestNewsBlog.map((obj, index) => {
             return (
-              <div className="lg:w-3/12 md:w-4/12 sm:w-6/12 w-full sm:px-2" key={index}>
+              <div
+                className="lg:w-3/12 md:w-4/12 sm:w-6/12 w-full sm:px-2"
+                key={index}
+              >
                 <div className=" w-full">
                   <img
                     src={obj.img}
                     alt="vel-news"
-                    className="w-full max-w-[330px]"
+                    className="w-full max-w-[330px] max-h-[280px] object-cover"
                   />
                   <div className="bg-black xl:p-[36px] p-5 flex justify-center items-center">
                     <div className="max-w-[206px]">

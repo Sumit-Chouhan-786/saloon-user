@@ -10,11 +10,13 @@ import facial from "../assets/images/png/facial.png";
 import razor from "../assets/images/png/razor.png";
 import mustache from "../assets/images/png/mustache.png";
 import hairStyling from "../assets/images/png/hair.png";
-import review_img from "../assets/images/webp/review-image.webp";
-import velNews from "../assets/images/webp/vel-news.webp";
-import portaNews from "../assets/images/webp/porla-news.webp";
-import fringillaNews from "../assets/images/webp/fringilla-news.webp";
-import liberoNews from "../assets/images/webp/libero-news.webp";
+import review_img1 from "../assets/images/jpeg/review1.jpg";
+import review_img2 from "../assets/images/jpeg/review2.jpg";
+import review_img3 from "../assets/images/jpeg/review3.jpg";
+import latest1 from "../assets/images/jpeg/latest1.jpg";
+import latest2 from "../assets/images/jpeg/latest2.jpg";
+import latest3 from "../assets/images/jpeg/latest3.jpg";
+import latest4 from "../assets/images/jpeg/latest4.jpg";
 
 // nav links
 export const NavLinks = [
@@ -33,39 +35,39 @@ export const servicesContent = [
 ];
 export const REVIEWS = [
   {
-    img: review_img,
+    img: review_img1,
     name: "GLEN SPARKLE, MIAMI",
   },
   {
-    img: review_img,
+    img: review_img2,
     name: "JANE DOE, NEW YORK",
   },
   {
-    img: review_img,
+    img: review_img3,
     name: "JOHN HOOD, NY",
   },
 ];
 export const LatestNewsBlog = [
   {
-    img: velNews,
+    img: latest1,
     title: "Vel Pellentesque",
     description: "Duis porta, ligula rhoncus euismod pretium, nisi tellus",
     link: "#",
   },
   {
-    img: portaNews,
+    img: latest2,
     title: "Porta Consequat ",
     description: "Duis porta, ligula rhoncus euismod pretium, nisi tellus",
     link: "#",
   },
   {
-    img: fringillaNews,
+    img: latest3,
     title: "Fringilla Augue",
     description: "Duis porta, ligula rhoncus euismod pretium, nisi tellus",
     link: "#",
   },
   {
-    img: liberoNews,
+    img: latest4,
     title: "Libero Vestibulum",
     description: "Duis porta, ligula rhoncus euismod pretium, nisi tellus",
     link: "#",

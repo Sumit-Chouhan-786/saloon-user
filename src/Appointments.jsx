@@ -78,10 +78,10 @@ function Appointments() {
 
   return (
     <>
-      <div className="flex justify-center items-center lg:py-16 py-5 mb-10">
+      <div className="flex justify-center items-center bg-black lg:py-16 py-5 mb-10">
         <div className="w-[60vw] flex flex-col items-center justify-center gap-10">
-          <div>Book appintments</div>
-          <div>
+          <div className="text-2xl md:text-[50px] tracking-[0.5px] !leading-[135%]">Book appintments</div>
+          <div className="w-full max-w-[400px] flex flex-col gap-4">
             <label className="input input-bordered flex items-center gap-2">
               Staff name
               <select

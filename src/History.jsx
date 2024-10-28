@@ -73,7 +73,7 @@ function History() {
 
     return (
       <>
-        <div className="flex items-center justify-center flex-col bg-white text-black font-medium py-16">
+        <div className="flex items-center justify-center flex-col bg-black text-white font-medium py-16">
           <div className="w-[70vw] flex flex-col items-center justify-center gap-10">
             <div className="text-2xl font-abril">All appointments history</div>
             <div className="w-full">
@@ -81,7 +81,7 @@ function History() {
               <div className="overflow-x-auto">
                 <table className="table ">
                   {/* head */}
-                  <thead className="text-black">
+                  <thead className="text-white">
                     <tr>
                       <th></th>
                       <th>Date</th>
@@ -93,7 +93,7 @@ function History() {
                   </thead>
                   <tbody>
                     {upcomingAppointments.map((appointment) => (
-                      <tr className="text-black" key={appointment._id}>
+                      <tr className="text-white" key={appointment._id}>
                         <td>{appointment._id}</td>
                         <td>{appointment.Date}</td>
                         <td>{appointment.startTime}</td>
@@ -132,7 +132,7 @@ function History() {
               <div className="overflow-x-auto">
                 <table className="table">
                   {/* head */}
-                  <thead className="text-black">
+                  <thead className="text-white">
                     <tr>
                       <th></th>
                       <th>Date</th>
@@ -143,7 +143,7 @@ function History() {
                   </thead>
                   <tbody>
                     {oldAppointments.map((appointment) => (
-                      <tr className="text-black"    key={appointment._id}>
+                      <tr className="text-white"    key={appointment._id}>
                         <td>{appointment._id}</td>
                         <td>{appointment.Date}</td>
                         <td>{appointment.startTime}</td>
@@ -162,7 +162,7 @@ function History() {
                 <div className="overflow-x-auto">
                   <table className="table">
                     {/* head */}
-                    <thead className="text-black">
+                    <thead className="text-white">
                       <tr>
                         <th></th>
                         <th>Date</th>
@@ -173,7 +173,7 @@ function History() {
                     </thead>
                     <tbody>
                       {cancelledAppointments.map((appointment) => (
-                        <tr key={appointment._id}>
+                        <tr className="text-white" key={appointment._id}>
                           <td>{appointment._id}</td>
                           <td>{appointment.Date}</td>
                           <td>{appointment.startTime}</td>
