@@ -1,11 +1,11 @@
 import React from "react";
 import Button from "./Button";
 import { NavLinks } from "../../utilits/helper";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const MobileNav = ({ NavOpenHandler, isOpen }) => {
-  const useLocationPath = useLocation();
-  const pathname = useLocationPath.pathname;
+   const useLocationPath = useLocation();
+   const pathname = useLocationPath.pathname;
   return (
     <div
       className={` fixed top-0 transition-all ease-in-out duration-300 z-10 h-screen bg-black w-full ${
@@ -27,7 +27,21 @@ const MobileNav = ({ NavOpenHandler, isOpen }) => {
           </a>
         ))}
 
-        <Button onClick={NavOpenHandler} content="BOOK APPOINTMENT" />
+        {pathname !== "/" ||
+          (pathname !== "/appointments" && (
+            <Link onClick={NavOpenHandler} to="/Signup" className="block lg:hidden">
+              <Button content="Signup" />
+            </Link>
+          ))}
+        {pathname !== "/" && (
+          <Link
+            to="/appointments"
+            onClick={NavOpenHandler}
+            className="block lg:hidden"
+          >
+            <Button content="Appointment" />
+          </Link>
+        )}
       </div>
     </div>
   );

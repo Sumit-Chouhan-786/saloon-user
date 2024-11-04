@@ -23,7 +23,6 @@ export const NavLinks = [
   { path: HOME_PATH, title: "Home" },
   { path: BLOG_PATH, title: "History" },
   { path: CONTACT_PATH, title: "Appointments" },
-  { path: SERVICES_PATH, title: "Edit Appointments" },
 ];
 export const servicesContent = [
   { image: tool, title: "HAIRCUT & BEARD TRIM" },

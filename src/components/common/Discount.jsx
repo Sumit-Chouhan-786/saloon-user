@@ -13,9 +13,9 @@ const Discount = () => {
             imperdiet et leo in vulputate. Sed eleifend lacus eu sapien sagittis
             impe.
           </p>
-          <button className="text-sm  bg-black text-yellow px-6 py-2 sm:text-base font-abril">
+          <a href="/appointments" className="text-sm  bg-yellow-400 text-black px-6 py-2 sm:text-base font-abril">
             BOOK NOW
-          </button>
+          </a>
         </div>
       </div>
     </div>

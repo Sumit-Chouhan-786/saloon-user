@@ -36,7 +36,7 @@ const Hero = () => {
           )}
           {pathname === CONTACT_PATH && (
             <h1 className="text-white text-center font-normal lg:text-[70px] md:text-[50px] text-[40px] font-abril uppercase">
-              Contact Us
+              Book Appointments
             </h1>
           )}
           {pathname === SERVICES_PATH && (

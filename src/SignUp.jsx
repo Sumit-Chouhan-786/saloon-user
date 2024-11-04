@@ -27,6 +27,7 @@ function Signup() {
 
         if (response.status === 200) {
             navigate("/login");
+            alert("User created successfully");
         } else {
             window.alert("error creating user");
         }

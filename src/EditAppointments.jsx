@@ -108,7 +108,6 @@ function EditAppointments() {
               End Time
               <input type="time" value={appointmentData.endTime} readOnly />
             </label>
-
             <label className="input input-bordered flex items-center gap-2">
               Description
               <input
